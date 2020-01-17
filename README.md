@@ -1,1 +1,1 @@
-[Computerome](https://www.computerome.dk/) general user guide.
+[Computerome's Wiki](https://www.computerome.dk/) general guide.
