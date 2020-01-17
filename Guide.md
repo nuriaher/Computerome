@@ -29,7 +29,6 @@ The personal *home directory*, can also be changed to any desired directory wher
 ```
 cd
 pwd
-
 ```
 
 In order to create these *Alias*, automatically load these modules in every session login and change the home directory, the *.bashrc* file has to be modified. *Alias* have to be defined and the command for loading a certain module has to be written in the *.bashrc* file.
@@ -57,7 +56,6 @@ fi
 
 # User specific aliases and functions
 module load gcc
-
 ```
 
 Once the file is open, under *"# User specific aliases and functions"* we can add for example:
@@ -66,14 +64,12 @@ Once the file is open, under *"# User specific aliases and functions"* we can ad
 
 ```
 alias le='ls -lth'
-
 ```
 **Module loads** - As before, write in a new line the command for loading a given module, for example, those involved in jobs submission:
 
 ```
 module load moab torque
 module load xqsub/1.0
-
 ```
 **Setting new home directory** - Write in a new line ```cd ```, space and the path of the desired new home directory:
 
