@@ -16,7 +16,7 @@ In the terminal, you should write the following command in order to login with y
 username@computerome.cbs.dtu.dk
 ```
 
-*Windows PC users* are are recommended to use the free Windows SSH client PuTTY for command-line SSH login to Computerome.
+*Windows PC users* are recommended to use the free Windows SSH client PuTTY for command-line SSH login to Computerome.
 
 ### 1.2. Setting up the login node
 
@@ -72,6 +72,16 @@ module load moab torque
 module load xqsub/1.0
 ```
 **Setting new home directory** - Write in a new line ```cd ```, space and the path of the desired new home directory:
+```
+cd home/new_desired_path
+```
+
+After writing in *.bashrc* the desired modifications, to actually apply them in the user session:
+```
+cd
+source .bashrc
+```
+After this, everytime the user logs in, the commands inside this file will be automatically runned.
 
 
 ### 1.3. Running/Submitting jobs
