@@ -40,7 +40,7 @@ cd
 nano .bashrc
 ```
 
-After this, .bashrc file opens and contains, for example:
+After this, .bashrc file opens and looks something like this:
 
 ```
 # .bashrc
@@ -58,7 +58,7 @@ fi
 module load gcc
 ```
 
-Once the file is open, under *"# User specific aliases and functions"* we can add for example:
+Once the file is open, under *"# User specific aliases and functions"* one can add for example:
 
 **Alias** - Create an alias for the current directory's content visualization command, as a list, sorted by  time modification and showing the size of the files/directories ```ls -lth```. It is important not to leave spaces between the characters defining the alias *(alias_name=command)*: 
 
@@ -76,12 +76,13 @@ module load xqsub/1.0
 cd home/new_desired_path
 ```
 
-After writing in *.bashrc* the desired modifications, to actually apply them in the user session:
+
+After writing in *.bashrc* the desired commands, the file can be exited by pressing *"Cntrl+X"*. To actually make these modifications valid in the user session, one last step:
 ```
 cd
 source .bashrc
 ```
-After this, everytime the user logs in, the commands inside this file will be automatically runned.
+After this, every time the user logs in, the commands inside this file will be automatically runned.
 
 
 ### 1.3. Running/Submitting jobs
