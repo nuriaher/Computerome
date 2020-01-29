@@ -104,7 +104,7 @@ usage: xqsub [FLAGS] [<CMDFILE> [<ARG>] [<ARG>]...]
 -l      [-l resource_list] Which can include used nodes, ppn, memory and walltime.
                 E.g.: nodes=1:ppn=8,mem=100gb,walltime=0:06:00:00
 -N      [-N name] Job name (not ID!, the ID is given by the system)
--de     After this last argument write the desired job command.
+-de     After this last argument write the desired job command
 ```
 
 Check all job status:
@@ -123,7 +123,7 @@ canceljob <jobid>
 ```
 
 
-**Note** that if not loaded yet or included in the .bashrc file, this package need to be loaded to use the job submit and control commands:
+**Note** that if not loaded yet or included in the .bashrc file, this package need to be loaded manually by the coming command to use the job submit and related commands:
 ```
 module load moab torque
 ```
