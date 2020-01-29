@@ -89,7 +89,44 @@ After this, every time the user logs in, the commands inside this file will be a
 In general, keep in mind jobs **should not be run on the login node** – it is only used as a platform to **submit jobs** into the high-performance cluster.
 
 Then, *how to submit jobs from the login node?*
+The ```xqsub``` will submit the jobs:
+```
+usage: xqsub [FLAGS] [<CMDFILE> [<ARG>] [<ARG>]...]
+  --about
+  --help
 
+-V
+-A      [-A account_string] E.g. : ku-cbd
+-W      [-W additional_attributes] E.g. : group_list=ku-cbd
+-d      [-d initdir] Initiation directory, e.g.: pwd (current directory)
+-e      [-e errorpath] Error file path
+-o      [-o path] Output path
+-l      [-l resource_list] Which can include used nodes, ppn, memory and walltime.
+                E.g.: nodes=1:ppn=8,mem=100gb,walltime=0:06:00:00
+-N      [-N name] Job name (not ID!, the ID is given by the system)
+-de     After this last argument write the desired job command.
+```
+
+Check all job status:
+```
+qstat
+```
+
+Check one specific job more detailed status with the ID seen in the ```qstat``` output:
+```
+checkjob -v <jobid>
+```
+
+Cancel one job:
+```
+canceljob <jobid>
+```
+
+
+**Note** that if not loaded yet or included in the .bashrc file, this package need to be loaded to use the job submit and control commands:
+```
+module load moab torque
+```
 
 
 
