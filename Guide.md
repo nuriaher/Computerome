@@ -107,7 +107,7 @@ usage: xqsub [FLAGS] [<CMDFILE> [<ARG>] [<ARG>]...]
 -de     After this last argument write the desired job command
 ```
 
-Check all job status:
+Check all jobs status:
 ```
 qstat
 ```
