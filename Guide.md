@@ -123,7 +123,7 @@ canceljob <jobid>
 ```
 
 
-**Note** that if not loaded yet or included in the .bashrc file, this package need to be loaded manually by the coming command to use the job submit and related commands:
+**Note** that if not loaded yet or included in the .bashrc file, this package needs to be loaded manually by the coming command to be able to use the job submit and related commands:
 ```
 module load moab torque
 ```
