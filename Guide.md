@@ -128,7 +128,13 @@ canceljob <jobid>
 module load moab torque
 ```
 
+### 1.4. Utilities
 
+To list your currently available modules, type:
+
+```
+module avail
+```
 
 
 
