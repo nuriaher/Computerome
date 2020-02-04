@@ -143,5 +143,5 @@ module unload module_name_v1
 module load module_name_v2
 ```
 
-To request installation of new software (or other version of existing software), please send a mail from your department mail to [Computerome support](http://wiki.bio.dtu.dk/computerome/index.php/Main_Page#Contact)
+To request installation of new software (or other version of existing software), please send a mail from your department mail to [Computerome support](http://wiki.bio.dtu.dk/computerome/index.php/Main_Page#Contact).
 
