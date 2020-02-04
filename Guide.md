@@ -138,9 +138,9 @@ module avail
 
 If one of the current loaded modules wants to be changed for the new and already installed version of the same:
 ```
-module unload bla1
+module unload module_name_v1
 
-module load bla2
+module load module_name_v2
 ```
 
 To request installation of new software (or other version of existing software), please send a mail from your department mail to [Computerome support](http://wiki.bio.dtu.dk/computerome/index.php/Main_Page#Contact)
